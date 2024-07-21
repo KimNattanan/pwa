@@ -1,14 +1,14 @@
 <html>
   <head>
     <link rel="manifest" href="./manifest.json">
-    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
-    <link rel="apple-touch-startup-image" href="/images/startup.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon.png">
+    <link rel="apple-touch-startup-image" href="./images/startup.png">
   </head>
   <body>
     <h1>test</h1>
     <script>
       if("serviceWorder" in navigator){
-        navigator.serviceWorker.register("/service-worker.js");
+        navigator.serviceWorker.register("./service-worker.js");
       }
     </script>
   </body>
