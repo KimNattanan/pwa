@@ -1,21 +1,27 @@
 <html>
-  <head>
-    <meta name="viewport" content="user-scalable=no" />
-    <style>
-      *{
-        overflow: hidden;
-      }
-    </style>
-    <link rel="manifest" href="./manifest.json">
-    <link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon.png">
-    <link rel="apple-touch-startup-image" href="./images/startup.png">
-  </head>
-  <body>
-    <h1>test</h1>
-    <script>
-      if("serviceWorder" in navigator){
-        navigator.serviceWorker.register("./service-worker.js");
-      }
-    </script>
-  </body>
+<head>
+  <meta name="viewport" content="user-scalable=no" />
+  <link rel="manifest" href="./manifest.json">
+  <link rel="apple-touch-icon" href="./assets/img/icon-1170x1170.png">
+  <link rel="apple-touch-startup-image" href="./assets/img/bg.jpg">
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+
+  <div class="sky-bg">
+    <div class="sky-bg-item"></div>
+  </div>
+  <div style="position: fixed;left: 20px;bottom: 20px;width: 20vmin;height: 20vmin">
+    <div class="btn1"></div>
+  </div>
+  <div style="position: fixed;right: 20px;bottom: 20px;width: 20vmin;height: 20vmin">
+    <div class="btn1"></div>
+  </div>
+
+  <script src="./assets/js/vender/pixi.min.js"></script>
+  <script src="./assets/js/main.js"></script>
+  <script>
+    if("serviceWorker" in navigator) navigator.serviceWorker.register("./assets/js/service-worker.js");
+  </script>
+</body>
 </html>
