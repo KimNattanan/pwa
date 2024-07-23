@@ -9,6 +9,7 @@
         -ms-user-select: none; /* Internet Explorer/Edge */
             user-select: none; /* Non-prefixed version, currently
                                   supported by Chrome and Opera */
+  touch-action: none;
 }
 
 .sky-bg{
@@ -40,7 +41,7 @@
   transition: all 1s cubic-bezier(0.33, 1, 0.68, 1);
   border-radius: 100%;
 }
-.btn1:hover{
+.btn1:active{
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
   -webkit-transition: -webkit-transform 1s cubic-bezier(0.33, 1, 0.68, 1);
@@ -58,7 +59,7 @@
   height: 90%;
   border-radius: 100%;
 }
-.btn2:hover{
+.btn2:active{
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
